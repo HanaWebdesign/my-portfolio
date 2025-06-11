@@ -490,7 +490,7 @@ nav ul {
 
 /* ハンバーガー開いたときのアニメーション */
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(5px,5px);
+  transform: rotate(45deg) translateY(5px);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -498,7 +498,7 @@ nav ul {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(5px,-5px);
+  transform: rotate(-45deg) translateY(-5px);
 }
 
 }
