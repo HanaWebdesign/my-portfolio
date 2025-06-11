@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hamburger.addEventListener('click', () => {
     nav.classList.toggle('open');
-    hamburger.classList.toggle('open'); // ← これでアニメーション効く！
+    hamburger.classList.toggle('open'); // ← アニメーション用
   });
 });
