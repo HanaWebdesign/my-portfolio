@@ -347,6 +347,19 @@ section {
     padding: 0.4rem 0.8rem;
   }
 
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 1rem;
+}
+
   .skill-item {
     width: 90%;
   }
@@ -357,6 +370,26 @@ section {
   }
 .hamburger {
   display: none;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #2c2a4a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* 開いたときの変形（✖） */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
 }
 
 /* ナビ（PC用） */
