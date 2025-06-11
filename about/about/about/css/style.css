@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  font-size: 18pxs;
 }
 
 .container {
@@ -87,7 +86,7 @@ h2 {
 }
 
 .skill-item {
-  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-family:'Press Start 2P', cursive;
   background-color: #f8d4e3;
   border: 2px dotted #d4c3f3;
   border-radius: 12px;
@@ -122,8 +121,4 @@ h2 {
 a {
   text-decoration: none;  
   color: inherit;        
-}
-
-h4{
-  font-family:'Press Start 2P', cursive;
 }
