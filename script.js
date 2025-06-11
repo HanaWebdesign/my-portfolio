@@ -6,3 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('open');
   });
 });
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('open');
+  hamburger.classList.toggle('open'); // ← これでアニメーション効く！
+});
