@@ -423,7 +423,8 @@ nav ul {
     right: 20px;
     top: 20px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 9999;
+    position: fixed;
   }
 
   .hamburger span {
