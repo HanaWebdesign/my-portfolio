@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Arial', sans-serif;
   font-size: 18px;
+   padding-top: 80px;
 }
 
 .container {
@@ -16,20 +17,21 @@ body {
 
 .header-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
-/* ハンバーガーアイコン */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .hamburger {
@@ -64,7 +66,6 @@ nav ul {
   list-style: none;
   padding: 1rem;
   background-color: #fff;
-  border-bottom: 2px dashed #d4c3f3;
     display: flex;
   list-style: none;
   gap: 20px;
@@ -82,11 +83,14 @@ h1 {
   text-align: center;
   background-color: #fff0fa; 
   padding: 1rem;
-  border: 2px dotted #d4c3f3; 
   border-radius: 10px;
   margin: 2rem auto;
   width: fit-content;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1.align-center {
+  margin-top: 100px; /* ナビが60px固定なので余裕を持たせる */
 }
 
 h2 {
@@ -94,8 +98,7 @@ h2 {
   color: #4e0084; 
   text-align: center;
   background-color: #ff66c4; 
-  padding: 1rem;
-  border: 2px dotted #d4c3f3; 
+  padding: 1rem; 
   border-radius: 10px;
   margin: 2rem auto;
   width: fit-content;
@@ -151,15 +154,16 @@ h2 {
 }
 
 .top {
-  font-family:'Press Start 2P', cursive;
-  padding: 1.2rem;
-  border: 3px solid #6b4ca5; 
+  font-family: 'Press Start 2P', cursive;
+  padding: 0.5rem; /* 小さめに */
+  border: 3px solid #6b4ca5;
   background-color: #f8d4e3;
   box-shadow: 3px 3px 0 #000;
-  font-size: 1.4rem;
+  font-size: 1rem;
   border-radius: 0;
   text-align: center;
   color: #2d124f;
+  margin-top: 2rem;
 }
 
 a {
@@ -270,6 +274,17 @@ footer {
   font-size: 0.9rem;
 }
 
+.page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* 必要に応じて */
+  z-index: 9998;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 下に影がつくと固定感アップ */
+}
+
+
 @media (max-width: 768px) {
   .skill-box {
     flex-direction: column;
@@ -329,10 +344,19 @@ section {
     height: auto;
   }
 
-  .top {
-    font-size: 1.1rem;
-    padding: 1rem;
-  }
+.top {
+  font-family: 'Press Start 2P', cursive;
+  padding: 1.2rem;
+  border: 3px solid #6b4ca5;
+  background-color: #f8d4e3;
+  box-shadow: 3px 3px 0 #000;
+  font-size: 1.4rem;
+  border-radius: 0;
+  text-align: center;
+  color: #2d124f;
+  width: fit-content;     /* ← 内容に合わせた最小幅 */
+  margin: 2rem auto;      /* ← 中央寄せ */
+}
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
