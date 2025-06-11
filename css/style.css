@@ -1,0 +1,124 @@
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #2c2a4a;
+  background-color: #f4effd;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+  text-align: center;     
+}
+
+nav ul {
+  font-family:'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 2px dashed #d4c3f3;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 24px;
+  color: #d48ad4; 
+  text-align: center;
+  background-color: #fff0fa; 
+  padding: 1rem;
+  border: 2px dotted #d4c3f3; 
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family:'Press Start 2P', cursive;
+  color: #4e0084; 
+  text-align: center;
+  background-color: #ff97d7; 
+  padding: 1rem;
+  border: 2px dotted #d4c3f3; 
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.skill-item {
+  font-family:'Press Start 2P', cursive;
+  background-color: #f8d4e3;
+  border: 2px dotted #d4c3f3;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  color: #2c2a4a;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+    word-break: break-word;      
+  overflow-wrap: break-word;    
+  padding: 1rem;
+  box-sizing: border-box;  
+  width: 220px;    
+}
+.skill-item:hover {
+  transform: scale(1.05);
+}
+
+.top {
+  font-family:'Press Start 2P', cursive;
+  padding: 1.2rem;
+  border: 3px solid #6b4ca5; 
+  background-color: #f8d4e3;
+  box-shadow: 3px 3px 0 #000;
+  font-size: 1.4rem;
+  border-radius: 0;
+  text-align: center;
+  color: #2d124f;
+}
+
+a {
+  text-decoration: none;  
+  color: inherit;        
+}
