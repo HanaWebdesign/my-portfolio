@@ -149,12 +149,7 @@ h4{
   h1 {
     font-size: 1.2rem;
   }
-}
-
-@media (max-width: 768px) {
-  /* ナビゲーション縦並びは既にOK */
-
-  .about-content {
+    .about-content {
     flex-direction: column;
     text-align: center;
   }
@@ -198,3 +193,4 @@ h4{
     padding: 1rem;
   }
 }
+
