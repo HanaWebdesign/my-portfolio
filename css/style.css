@@ -490,9 +490,8 @@ nav ul {
   transform-origin: center center;
 }
 
-/* 開いたとき（×の形に） */
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(9px);
+  transform: rotate(45deg);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -500,6 +499,6 @@ nav ul {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-9px);
+  transform: rotate(-45deg);
 }
 }
