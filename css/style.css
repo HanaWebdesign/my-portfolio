@@ -32,6 +32,10 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+.hamburger {
+  display: none;
+}
+
 #nav {
   display: flex;
   justify-content: center;
