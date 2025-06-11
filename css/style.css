@@ -36,7 +36,20 @@ body {
   border-radius: 2px;
 }
 
+#nav {
+  display: none;
+}
 
+/* ハンバーガークリック時に表示 */
+#nav.open {
+  display: block;
+  background: #000; /* 必要なら背景色など追加 */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
 
 nav ul {
   font-family:'Press Start 2P', cursive;
