@@ -6,14 +6,55 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  font-size: 18px;
 }
 
 .container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.header-container {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
-  text-align: center;     
+}
+
+/* ハンバーガーアイコン */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger {
+  display: none;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ハンバーガークリック時に表示 */
+#nav.open {
+  display: block;
+  background: #000; /* 必要なら背景色など追加 */
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 
 nav ul {
@@ -24,6 +65,9 @@ nav ul {
   padding: 1rem;
   background-color: #fff;
   border-bottom: 2px dashed #d4c3f3;
+    display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 nav a {
@@ -49,7 +93,7 @@ h2 {
   font-family:'Press Start 2P', cursive;
   color: #4e0084; 
   text-align: center;
-  background-color: #ff97d7; 
+  background-color: #ff66c4; 
   padding: 1rem;
   border: 2px dotted #d4c3f3; 
   border-radius: 10px;
@@ -86,7 +130,7 @@ h2 {
 }
 
 .skill-item {
-  font-family:'Press Start 2P', cursive;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   background-color: #f8d4e3;
   border: 2px dotted #d4c3f3;
   border-radius: 12px;
@@ -121,4 +165,290 @@ h2 {
 a {
   text-decoration: none;  
   color: inherit;        
+}
+
+h4{
+  font-family:'Press Start 2P', cursive;
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center; 
+}
+
+footer {
+    text-align: center; 
+}
+
+.works-box,
+.log-box,
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+#LOG {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.log-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.log-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.log-link img {
+  width: 150px;
+  height: auto;
+}
+
+.log-link span {
+  margin-top: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.log-link img {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.log-link img:hover {
+  transform: scale(1.1);
+}
+
+#CONTACT {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-item img:hover {
+  transform: scale(1.1);
+}
+
+.contact-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .skill-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+section {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.skill-box {
+  width: 100%;
+}
+
+
+  h1 {
+    font-size: 1.2rem;
+  }
+    .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 70%;
+    max-width: 300px;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+
+  .skill-item {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  h3, h4, p {
+    font-size: 1rem;
+    margin: 0.5rem auto;
+    width: 90%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .top {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+        flex-direction: column;
+    padding: 20px 0;
+  }
+
+  nav a {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .skill-item {
+    width: 90%;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+.hamburger {
+  display: none;
+}
+
+/* ナビ（PC用） */
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ハンバーガー開閉時のアニメ */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  /* ハンバーガー表示 */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background: #2c2a4a;
+    border-radius: 2px;
+  }
+
+  /* ナビ隠す（初期状態） */
+  #nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+  }
+
+  /* ハンバーガークリックで表示 */
+  #nav.open {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 20px 0;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+}
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background: #2c2a4a;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* 開いた時のアニメーション */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
 }
