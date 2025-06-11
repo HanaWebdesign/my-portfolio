@@ -192,5 +192,24 @@ h4{
     font-size: 1.1rem;
     padding: 1rem;
   }
+    nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  nav li {
+    margin: 0.3rem;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    font-size: 0.75rem;
+    border: 1px dashed #d4c3f3;
+    border-radius: 5px;
+    background-color: #fff;
+  }
 }
 
