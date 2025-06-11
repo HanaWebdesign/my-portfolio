@@ -54,7 +54,7 @@ h2 {
   font-family:'Press Start 2P', cursive;
   color: #4e0084; 
   text-align: center;
-  background-color: #ff97d7; 
+  background-color: #ff66c4; 
   padding: 1rem;
   border: 2px dotted #d4c3f3; 
   border-radius: 10px;
@@ -158,6 +158,77 @@ footer {
   max-width: 720px;
   margin: 0 auto;
   padding: 1rem;
+}
+
+#LOG {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.log-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.log-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.log-link img {
+  width: 150px;
+  height: auto;
+}
+
+.log-link span {
+  margin-top: 0.5rem;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.log-link img {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+.log-link img:hover {
+  transform: scale(1.1);
+}
+
+#CONTACT {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-item img:hover {
+  transform: scale(1.1);
+}
+
+.contact-item p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
