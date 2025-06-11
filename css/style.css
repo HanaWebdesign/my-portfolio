@@ -346,40 +346,38 @@ footer {
     padding: 0.5rem;
   }
 
-.hamburger {
-  width: 30px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-}
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
 
-.hamburger span {
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #2c2a4a;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-  transform-origin: center;
-}
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #2c2a4a;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+  }
 
-/* ✕の変形：バランス重視で整える */
-.hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-.hamburger.open span:nth-child(2) {
-  opacity: 0;
-}
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
