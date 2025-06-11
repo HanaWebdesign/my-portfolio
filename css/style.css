@@ -24,7 +24,7 @@ body {
 .hamburger {
   width: 30px;
   height: 24px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -374,6 +374,8 @@ footer {
     text-align: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    width: 100%;         /* ←追加：全幅にして */
+    padding: 0 1rem;
   }
 
   .about-text {
@@ -402,5 +404,54 @@ footer {
 
   .skill-item {
     width: 90%;
+  }
+
+    section {
+    padding: 3rem 1.5rem;
+    width: 100%;      
+  }
+
+  .skill-box {
+    margin: 2rem auto;
+    gap: 1.5rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .top {
+    margin: 3rem auto;
+  }
+
+  .about-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; /* ←追加推奨 */
+}
+.about-text, .about-image img {
+  text-align: center;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%; /* ←この重複は不要かも */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+  .hamburger {
+    display: flex;
   }
 }
