@@ -368,4 +368,39 @@ footer {
     font-size: 0.9rem;
     padding: 0.5rem;
   }
+    .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .about-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h1, h2 {
+    margin: 2rem auto;
+    width: fit-content;
+  }
+
+  .skill-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    width: 90%;
+  }
 }
